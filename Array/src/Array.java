@@ -70,15 +70,12 @@ public class Array {
         for(int numero:numeri){
             if(numero%2==0){
                 System.out.println("pari: " + numero);
+            }else{
+                    System.out.println("dispari: " +numero);
             }
         }
-        for (int numero:numeri){
-            if(numero%2 !=0){
-                System.out.println("dispari: " +numero);
-            }
-        }
+*/
 
-     */
         //Implementa un programma che controlla se un determinato numero è presente in un array.
         /*int[] numeriNumeri = new int [] {80, 2, 90, 75, 11, 23};
         for(int i=0; i<numeriNumeri.length; i++){
@@ -143,7 +140,7 @@ public class Array {
     }
 
      */
-        //Scrivi un programma che trovi gli elementi duplicati in un array di numeri interi.
+    /*    //Scrivi un programma che trovi gli elementi duplicati in un array di numeri interi.
         int [] duplicati= {2,4,8,6,7,4,2};
         for(int i=0; i<duplicati.length; i++){
             for (int x=0; x<duplicati.length; x++){
@@ -152,9 +149,46 @@ public class Array {
                 }
             }
         }
+
+     */
+        //Rotazione a sinistra Implementa un programma che ruota gli elementi di un array a sinistra di una posizione. Ad esempio, se l'array è {1, 2, 3, 4}, diventa {2, 3, 4, 1}.
+    /*    int[] numeri = {1, 2, 3, 4};
+        int ruota = 1;
+        numeri = ruotaSinistra(numeri, ruota);
+        System.out.println(Arrays.toString(numeri));
+    }
+        public static int [] ruotaSinistra(int [] numeri, int ruota){
+            for(int i=0; i<ruota;i++){
+                int r= numeri[0];
+                for(int x= 0; x<numeri.length -1; x++){
+                    numeri[x]=numeri [x+1];
+                }
+                numeri[numeri.length-1]=r;
+            }
+            return numeri;
+        }
+        public static void stampo(int [] numeri){
+            System.out.println(Arrays.toString(numeri));
+
+     */
+        //Trova coppie con una somma specifica Dato un array e un numero, trova tutte le coppie di elementi il cui valore sommato corrisponde al numero dato.
+        int[] coppieNumeri = {2, 4, 6, 8, 10, 1, 3, 5, 7, 9};
+        int somma = 10;
+        trovaCoppie(coppieNumeri, somma);
+    }
+
+    public static void trovaCoppie(int[] coppieNumeri, int somma) {
+        for (int i = 0; i < coppieNumeri.length; i++) {
+            for (int x = i + 1; x < coppieNumeri.length; x++) {
+                if(coppieNumeri[i] + coppieNumeri[x] == somma){
+                    System.out.println(coppieNumeri[i] + "," + coppieNumeri [x]);
+                }
+            }
+        }
     }
 }
-//Rotazione a sinistra Implementa un programma che ruota gli elementi di un array a sinistra di una posizione. Ad esempio, se l'array è {1, 2, 3, 4}, diventa {2, 3, 4, 1}.
-//Trova coppie con una somma specifica Dato un array e un numero, trova tutte le coppie di elementi il cui valore sommato corrisponde al numero dato.
+
+
+
 //Array ordinato Scrivi un programma che ordina un array in ordine crescente usando un algoritmo di ordinamento come Bubble Sort o Selection Sort.
 //Merge di due array ordinati Scrivi un programma per unire due array ordinati in uno nuovo che sia anch'esso ordinato.
