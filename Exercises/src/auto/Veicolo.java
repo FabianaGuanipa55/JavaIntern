@@ -5,22 +5,26 @@ public class Veicolo {
     private short oraArrivo;
     private short oraScadenza;
 
-    public Veicolo(int targa, short oraArrivo, short oraScadenza){
-        this.targa= targa;
-        this.oraArrivo= oraArrivo;
-        this.oraScadenza= oraScadenza;
+    public Veicolo(int targa, short oraArrivo, short oraScadenza) {
+        this.targa = targa;
+        this.oraArrivo = oraArrivo;
+        this.oraScadenza = oraScadenza;
     }
-    public int setTarga(){
+
+    public int getTarga() {
         return targa;
     }
-    public void getTarga(int targa){
-        this.targa=targa;
+
+    public void setTarga(int targa) {
+        this.targa = targa;
     }
-    public short setOraArrivo(){
+
+    public short getOraArrivo() {
         return oraArrivo;
     }
-    public void getOraArrivo(short oraArrivo){
-        this.oraArrivo=oraArrivo;
+
+    public void setOraArrivo(short oraArrivo) {
+        this.oraArrivo = oraArrivo;
     }
 
     public short getOraScadenza() {
@@ -29,8 +33,8 @@ public class Veicolo {
 
     public void setOraScadenza(short oraScadenza) {
         this.oraScadenza = oraScadenza;
-
     }
+
     @Override
     public String toString() {
         return "Veicolo{" +
