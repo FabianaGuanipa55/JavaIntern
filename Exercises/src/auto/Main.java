@@ -19,7 +19,7 @@ public class Main {
         parcheggio.aggiornaOra();
         System.out.println("Ora corrente: " + parcheggio.getOraCorrente());
 
-        parcheggio.promozione(56, 2); // Esempio di promozione
+        parcheggio.promozione(56, 2);
 
         parcheggio.statisticaVetture();
     }
