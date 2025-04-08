@@ -1,4 +1,4 @@
-package Matrici;
+package matrici;
 
 public class ArrayBidimensionale {
     public static void main(String[] args) {
