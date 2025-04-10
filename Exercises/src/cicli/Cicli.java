@@ -76,9 +76,9 @@ public class Cicli {
         System.out.println("il risultato è: "+ base + esponente + risultato);
     }
          public static int calcolo(int a, int b){
-        int risultato=0;
-        int i=0;
-        while(i<=b){
+        int risultato=1;
+        int i=1;
+        while(i<b){
             risultato*=a;
         }
         return risultato;

@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Inserisci la quantita dell'articolo libro e ti do il prezzo");
         Scanner scanner= new Scanner(System.in);
         int quantitaInserita = scanner.nextInt();
-        if(quantitaInserita< libro.getPrezzo()){
+        if(quantitaInserita< libro.getQuatita()){
             System.out.println("il prezzo del libro è: "+ libro.getPrezzo());
         }else{
             System.out.println("non abbiamo questa quantità di libri, cio ciao" + libro.getQuatita());
