@@ -36,10 +36,6 @@ public abstract class ElementoBiblioteca {
 
     @Override
     public String toString() {
-        return "Biblioteca{" +
-                "id='" + id + '\'' +
-                ", titolo='" + titolo + '\'' +
-                ", autore='" + autore + '\'' +
-                '}';
+        return "ID: " + id + ", titolo: " + titolo + ", Autore: " + autore;
     }
 }

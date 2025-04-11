@@ -13,8 +13,6 @@ public class Libro extends ElementoBiblioteca {
 
     @Override
     public String toString() {
-        return "Libro{" +
-                "isbn=" + isbn +
-                '}';
+        return super.toString() + ", ISBN: " + isbn;
     }
 }

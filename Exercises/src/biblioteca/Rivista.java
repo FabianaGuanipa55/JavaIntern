@@ -17,8 +17,6 @@ public class Rivista extends ElementoBiblioteca {
 
     @Override
     public String toString() {
-        return "Rivista{" +
-                "numeroEdizione=" + numeroEdizione +
-                '}';
+        return super.toString() + "Numero edizione: " + numeroEdizione;
     }
 }

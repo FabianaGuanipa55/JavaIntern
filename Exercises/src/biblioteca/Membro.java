@@ -37,9 +37,6 @@ public class Membro {
 
     @Override
     public String toString() {
-        return "Membro{" +
-                "id='" + id + '\'' +
-                ", nome='" + nome + '\'' +
-                '}';
+        return "ID: " + id + ", Nome " + nome + ",Prestiti Correnti: " + prestitiCorrenti;
     }
 }
