@@ -16,7 +16,7 @@ public class GestioneOrdini {
    public void processaOrdine(Ordine ordine) throws ProdottoEsauritoException{
        System.out.println("-----------Inizio elaborazione ordine------------");
 
-       for(Prodotto prodotto: ordine.getCategorieProdotti()){
+       for(Prodotto prodotto: ordine.getListaProdotti()){
            if(prodotto.getPrezzo()==0){
                throw new ProdottoEsauritoException("Il prodotto: " + prodotto.getNome() + "non è al momento disponibile. ");
            }
